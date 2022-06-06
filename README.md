@@ -15,7 +15,7 @@ Discover current weather conditions by city names.
  ┣ 📜index.html
  ┗ 📜styles.css
  ```
-
+![alt text](https://raw.githubusercontent.com/midoritiba/weather-app/main/mockup.png)
 
 For this project we get access to a sampling of AccuWeather API endpoints - City and Current Conditions for our case.
 
