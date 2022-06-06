@@ -1,5 +1,6 @@
 # Weather App
-Discover current weather conditions by city names.
+http://michelletiba.me/weather-app/
+## Discover current weather conditions by city names.
 
 ```bash
 📦weather-app
