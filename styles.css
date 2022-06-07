@@ -3,8 +3,6 @@
 body{
     font-family: 'Roboto Mono', monospace;
     background: #eeedec;
-    letter-spacing: 0.2em;
-    font-size: 0.8em;
     margin-bottom: 2rem;
 }
 
@@ -23,12 +21,12 @@ h1{
     top: 30%;
     left: 10%;
     text-shadow: -3px 4px 2px rgb(248, 248, 248);
+    letter-spacing: 0.2em;
 }
 
 form{
     display: flex;
     flex-direction: column;
-    gap: 10px;
     margin-bottom: 10px;
 }
 
@@ -41,7 +39,6 @@ input[type=text] {
     color: white;
     font-family: 'Roboto Mono', monospace;
     border: none;
-    max-width: 400px;
     -webkit-box-shadow: -9px 9px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -9px 9px 5px 0px rgba(0,0,0,0.75);
     box-shadow: -9px 9px 5px 0px rgba(0,0,0,0.75);
@@ -49,12 +46,10 @@ input[type=text] {
 
 input[type=text]:focus {
     outline: none;
-    background-color: rgb(62, 141, 115);
  }
 
 label{
     font-size: 15px;
-    letter-spacing: 0;
 }
 
 .time{
@@ -75,8 +70,6 @@ label{
 }
 
 .card{
-    background-color: white;
-    margin-top: 1rem;
     -webkit-box-shadow: -9px 9px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -9px 9px 5px 0px rgba(0,0,0,0.75);
     box-shadow: -9px 9px 5px 0px rgba(0,0,0,0.75);
@@ -90,13 +83,9 @@ label{
 .details{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 400px;
 }
 
 h2{
-    width: 100%;
     text-align: center;
     color: #FF0066;
     margin-bottom: 0;
@@ -104,7 +93,6 @@ h2{
 }
 .detail{
     margin-top: 0;
-    width: 100%;
     text-align: center;
     padding-bottom: 15px;
     font-size: 16px;
