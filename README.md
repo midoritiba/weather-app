@@ -1,4 +1,4 @@
-# Weather App
+# Weather App 🌤
 http://michelletiba.me/weather-app/
 ## Discover current weather conditions by city names.
 
