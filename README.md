@@ -24,6 +24,7 @@ The following concepts were applied in this project:
 
 - Fetch API
 - Async & Await
+- Class Constructor 
 - DOM Manipulation
 - onSubmit Event
 - Destructuring

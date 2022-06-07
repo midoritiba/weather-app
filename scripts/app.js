@@ -1,3 +1,6 @@
+const forecast = new Forecast();
+
+//elements
 const form = document.querySelector('form')
 const card = document.querySelector('.card')
 const details = document.querySelector('.details')
@@ -17,6 +20,7 @@ function hideLoader (){
     loader.setAttribute('hidden', '');
 }
 
+//updating innerHTML with data fetched
 const updateUI = (data) => {
 
     const { cityDetails, weather } = data;
@@ -44,7 +48,7 @@ const updateUI = (data) => {
     }
 }
 
-
+//Get the city entered. Display loader, fetch data, hide loader, display newdata:
 form.addEventListener('submit', (e) => {
     e.preventDefault()
     displayLoader();
@@ -53,17 +57,11 @@ form.addEventListener('submit', (e) => {
     const city = form.city.value.trim();
     form.reset()
 
-    //update the ui with the new city
-    updateCity(city)
+    //update the ui with the city
+    forecast.updateCity(city)
         .then(data => {
             hideLoader()
             updateUI(data)
         })
         .catch(err => console.log(err.message))
 })
-
-const updateCity = async (city) => {
-    const cityDetails = await getCity(city)
-    const weather = await getWeather(cityDetails.Key)
-    return { cityDetails, weather }
-}
