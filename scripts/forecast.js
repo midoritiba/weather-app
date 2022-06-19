@@ -1,12 +1,13 @@
 class Forecast{
     constructor(){
-        this.weatherURL = 'http://dataservice.accuweather.com/currentconditions/v1/';
-        this.cityURL = 'http://dataservice.accuweather.com/locations/v1/cities/search;'
+        this.weatherURL = 'https://dataservice.accuweather.com/currentconditions/v1/';
+        this.cityURL = 'https://dataservice.accuweather.com/locations/v1/cities/search;'
+        this.API_KEY = process.env.API_KEY
     }
     
     //Find the city properties for the city entered by the user:
     async getCity(city){
-        const query = `?apikey=yx2fXVF0tQ7yG5ZEJu3BSu8a6um0P4kv&q=${city}`
+        const query = `?apikey=${this.API_KEY}&q=${city}`
         const response = await fetch(this.cityURL + query)
         const data = await response.json()
     
